@@ -1,0 +1,50 @@
+.btn-danger-1 {
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 25%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--color-danger);
+    font-family: "CustomFont";
+  }
+  
+  .btn-success-1 {
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 25%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--color-success);
+    font-family: "CustomFont";
+  }
+  .btn-cancel-1 {
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 25%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--color-primary);
+    font-family: "CustomFont";
+  }
+  
+  .tag-delete-card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+    border-bottom: 1px solid rgb(194, 193, 193);
+  }
+  

@@ -1,0 +1,78 @@
+.education-sr-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.education-sr-card{
+    width: auto;
+    box-shadow: 0 2px 3px rgba(56,59,61,.05);
+    min-width: 0;
+    max-width: 500px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #f0f1f2;
+    border-radius: 0.1875rem;
+    h2{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+.img-bgAkademi{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+// sr-player.scss
+
+.list-item-header {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0; // Header background color
+    width: 50%;
+  }
+  
+  .list-item-title {
+    margin-right: 10px;
+   // width: 50%;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .download-button {
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    background-color: #2196f3; // Header background color
+    border-radius: 0.25rem;
+  }
+  
+  .open-button {
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    background-color: #c96e23; // Header background color
+    border-radius: 0.25rem;
+  }
+  

@@ -1,0 +1,43 @@
+main {
+  width: 80%;
+  will-change: auto;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: padding;
+  flex-direction: column;
+  display: flex;
+  margin-left: 18.6rem;
+}
+section {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex-grow: 1;
+}
+ /* ==================MEDIA QUERIES================= */
+ @media screen and (max-width: 768px) {
+  main {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+section{
+  width: 100%;
+}
+main .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+}
+main .recent-orders table{
+    width: 100%;
+    margin: 0;
+}
+ }
+
+ @media screen and (max-width: 1200px) {
+  main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+ }

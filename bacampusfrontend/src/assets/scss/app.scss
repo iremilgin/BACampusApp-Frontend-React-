@@ -1,0 +1,186 @@
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #009dde;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-light: rgba(242, 242, 248, 0.852);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --color-dark: #363636;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-danger);
+}
+.dark-theme-variables {
+  --color-background: #383a3f;
+  --color-white: #f6f6f9;
+  --color-dark: #383a3f;
+  --color-dark-variant: #383a3f;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+/* Add styles for dark mode text and icons */
+body.dark-theme-variables {
+  color: var(--color-white);
+}
+
+/* Add styles for dark mode icons (adjust color if needed) */
+
+body.dark-theme-variables img {
+  filter: brightness(100);
+}
+
+body.dark-theme-variables .profile img {
+  filter: none;
+}
+body .dark-theme-variables .profile .info p {
+  color: #f1f3f9;
+}
+body .dark-theme-variables .profile .info p b {
+  color: #f1f3f9;
+}
+
+/* Add styles for dark mode sidebar links text */
+body.dark-theme-variables .sidebar a {
+  color: var(--color-white);
+}
+
+/* body.dark-theme-variables .sidebar img{
+  color:#F1F3F9;
+} */
+
+body.dark-theme-variables .sidebar h3 {
+  color: #f1f3f9;
+}
+
+body.dark-theme-variables .sidebar p {
+  color: #f1f3f9;
+}
+
+body.dark-theme-variables .right .profile .info {
+  color: #f1f3f9;
+}
+
+body.dark-theme-variables .right .profile .info p {
+  color: #f1f3f9;
+}
+body.dark-theme-variables .right .profile .info p b {
+  color: #f1f3f9;
+}
+body.dark-theme-variables .right .profile .info small {
+  color: #f1f3f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+@font-face {
+  font-family: "CustomFont";
+  src: url("../font/Poppins-Medium.ttf");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "CustomFont" !important;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+}
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 16.8rem auto;
+  display: block;
+}
+a {
+  color: var(--color-dark);
+}
+.logo-img {
+  display: block;
+  width: 100%;
+}
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 0.87rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+h5 {
+  font-size: 0.77rem;
+}
+small {
+  font-size: 0.75rem;
+}
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.text-muted {
+  margin-top: 0px;
+  color: #414a59;
+}
+p {
+  color: var(--color-dark-variant);
+}
+b {
+  color: var(--color-dark);
+}
+.primary {
+  color: var(--color-primary);
+}
+.danger {
+  font-weight: bold;
+  color: var(--color-danger);
+}
+.success {
+  color: var(--color-success);
+}
+.warning {
+  color: var(--color-warning);
+}
+/* ==================MEDIA QUERIES================= */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    grid-template-columns: 7rem auto 23rem;
+  }
+}
+/* ==================MEDIA QUERIES================= */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}

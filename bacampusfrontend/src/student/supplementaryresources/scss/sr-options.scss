@@ -1,0 +1,93 @@
+.education-sr-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.education-sr-card{
+    width: auto;
+    box-shadow: 0 2px 3px rgba(56,59,61,.05);
+    min-width: 0;
+    max-width: 500px;
+    
+    margin-top: 20px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #f0f1f2;
+    border-radius: 0.1875rem;
+    h2{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+.img-bgAkademi{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.sr-card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-height: 40px;
+}
+
+
+.sroptions-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f6f6f9;
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sroptions-listcard-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.sroptions-card-body {
+  display: flex;
+  flex-direction: row; 
+  justify-items: flex-end; 
+  padding: 40px 2px 2px 60px;
+
+
+}
+
+.sr-button {
+  margin-top: 10px; 
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(97, 97, 97);
+   margin-right: 3px;
+
+}
+
+
+.card-information-sr{
+  display: flex;
+  flex-direction: column;
+  max-width: 41%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.sr-eduaction-name{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}

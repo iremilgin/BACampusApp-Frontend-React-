@@ -1,0 +1,206 @@
+:root {
+  --color-light: rgba(242, 242, 248, 0.852);
+  --card-padding: 1.8rem;
+}
+aside {
+  height: 100vh;
+  width: 260px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1030;
+  left: 0;
+
+  .top {
+    background-color: transparent;
+    width: 240px;
+    margin-left: 10px;
+  }
+  .close {
+    display: none;
+  }
+}
+/* =====================SİDEBAR================== */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  svg {
+    font-size: 20px;
+  }
+}
+.active {
+  background-color: #f3f3f7;
+  color: #0070ba !important;
+  border-radius: 10px;
+  font-size: 13px !important;
+  transform: translateX(1px);
+  .menu {
+    padding-left: 30px;
+    h3 {
+      font-size: 14px;
+    }
+  }
+}
+
+aside .sidebar {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  top: 3rem;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+
+  margin-top: -25px;
+
+  border-right: 8px solid #f3f3f7;
+  border-left: 8px solid #f3f3f7;
+  border-bottom: 80px solid #f3f3f7;
+  // border-radius: 10px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f3f3f7;
+  }
+}
+
+.sidebar-header {
+  cursor: pointer;
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-dark);
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  height: 3.4rem !important;
+  transition: all 300ms ease;
+}
+aside .sidebar a.menu-item {
+  width: 250px;
+  display: flex;
+  padding-right: 5px;
+  margin-left: 0;
+}
+aside .sidebar a.menu-item:hover {
+  color: #0070ba;
+  transform: translateX(15px);
+}
+.vertical-line {
+  width: 5px;
+  height: 3rem;
+  background-color: #0070ba;
+  margin-left: 0;
+  display: none;
+}
+
+.menu-item.active .vertical-line {
+  display: block;
+}
+
+link {
+  margin: 0;
+  padding: 0;
+}
+.bars {
+  display: none;
+}
+.close {
+  display: none;
+}
+/* ==================MEDIA QUERIES================= */
+@media screen and (min-device-width: 768px) and (max-width: 1200px) {
+  aside {
+    width: 180px;
+  }
+  .sidebar {
+    position: fixed;
+    z-index: 1100;
+    background: white;
+    width: 20%;
+    height: 100%;
+
+    .menu-item {
+      width: 100px;
+    }
+  }
+  aside .logo-img {
+    width: 170px;
+    height: 28px;
+    object-fit: cover;
+  }
+
+  .menu svg {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 350px) and (max-device-width: 768px) {
+  aside {
+    display: none;
+    margin-left: -500px;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  @keyframes showMenu {
+    to {
+      left: 50;
+    }
+  }
+
+  aside .close {
+    display: inline-block;
+    cursor: pointer;
+    left: -60%;
+  }
+
+  .bars {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    left: 60%;
+    background: #009bde63;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1105;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  aside {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  aside::-webkit-scrollbar {
+    width: 15px;
+  }
+  aside::-webkit-scrollbar-thumb {
+    background: url(../img/scroll.gif);
+    border-radius: 10px;
+  }
+  aside::-webkit-scrollbar-track {
+    background: rgb(204, 95, 95);
+  }
+  aside::-webkit-scrollbar-track:hover {
+    background-color: rgb(0, 112, 186);
+  }
+}

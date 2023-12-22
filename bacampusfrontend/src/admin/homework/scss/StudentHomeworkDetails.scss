@@ -1,0 +1,35 @@
+.details-student-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.student-name-modal,
+.student-subname-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-student-info-label {
+    width: 200px;
+}
+
+.details-student-info {
+    width: 420px;
+}
+
+.splitLine{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.student-image {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+}
+

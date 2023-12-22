@@ -1,0 +1,101 @@
+.btn-delete {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--danger, #d9534f);
+}
+.btn-edit {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--primary, #337ab7);
+}
+.btn-create {
+  width: 150px;
+  height: 30px;
+  border-radius: 12px;
+  color: white;
+  background: var(--green, #5cb85c);
+  float: right;
+}
+.btn-warning {
+  width: 150px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--yellow, #e0a800);
+}
+.custom-cancel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 35, 35);
+ height: 25px;
+  color: #fffafa;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: 1px solid red;
+  &:hover {
+    background-color: #4a9e56;
+    color: #fff;
+  }
+}
+.button-createDelete{
+  display: flex;
+  justify-content: flex-end;
+}
+.tag-button-delete{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  .btn-tag2 {
+    display: flex;
+    width: 150px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--primary, red);
+    font-family: "CustomFont";
+    font-size: larger;
+  }
+}
+.tag-button-create {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  .btn-tag2 {
+    display: flex;
+    width: 150px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    background: var(--primary, #33b75b);
+    font-family: "CustomFont";
+    font-size: larger;
+  }
+}

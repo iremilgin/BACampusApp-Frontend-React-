@@ -1,0 +1,84 @@
+.classroomdetail-table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.classroomdetail-form-field {
+    margin-bottom: 30px;
+}
+
+.classroomdetail-table {
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 10px;
+}
+
+.classroomdetail-th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.classroomdetail-tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.classroomdetail-td strong {
+    font-weight: bold;
+}
+
+.classroomdetail-label{
+    color: #0070BA;
+    font-size: 16px;
+}
+  
+
+.classroomdetail-td {
+    position: relative;
+    text-align: start;
+    width: 1%;
+    white-space: nowrap;
+}
+
+.classroomdetail-th,
+.classroomdetail-td {
+    box-sizing: border-box;
+    padding: 12px;
+    text-align: left;
+}
+
+.classroomdetail-th,
+.classroomdetail-td:first-child {
+    width: 25%; 
+}
+
+.classroomdetail-td:first-child .classroomdetail-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.classroomdetail-image-size {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+@media (max-width: 768px) {
+    .classroomdetail-td,
+    .classroomdetail-th,
+    .classroomdetail-td:first-child {
+        width: auto;
+    }
+
+    .classroomdetail-td:first-child .classroomdetail-label {
+        display: block;
+        margin-bottom: 8px; 
+    }
+
+    .classroomdetail-image-size {
+        display: block;
+        margin: 0 auto;
+    }
+}

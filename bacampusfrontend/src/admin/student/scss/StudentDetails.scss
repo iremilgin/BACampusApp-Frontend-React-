@@ -1,0 +1,95 @@
+.accordion-row {
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  .accordion-section {
+    flex: 0.3;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 14px;
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+  .accordion-image,
+  .accordion-default-icon {
+    color: #666;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+.homework-form-container {
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+
+  .line {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .accordion {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    .accordion-title {
+      background-color: #f7f7f7;
+      padding: 0.75rem 1.25rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        margin-left: 0.5rem;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    .accordion-content {
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+.title-with-circle {
+  display: flex;
+  align-items: center;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #0070ba;
+  margin-right: 10px;
+}

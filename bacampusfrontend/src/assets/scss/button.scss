@@ -1,0 +1,78 @@
+.btn-delete {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--danger, #d9534f);
+}
+.btn-edit {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--primary, rgba(0, 72, 102, 1));
+}
+.btn-create {
+  width: 150px;
+  height: 30px;
+  border-radius: 12px;
+  color: white;
+  background: var(--green, #5cb85c);
+  float: right;
+}
+.btn-warning {
+  width: 150px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--yellow, #e0a800);
+}
+
+.custom-cancel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 35, 35);
+  height: 25px;
+  color: #fffafa;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: 1px solid red;
+  &:hover {
+    background-color: #4a9e56;
+    color: #fff;
+  }
+}
+
+.custom-edit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow, #e0a800);
+  height: 25px;
+  color: #fffafa;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: 1px solid red;
+  &:hover {
+    background-color: #4a9e56;
+    color: #fff;
+  }
+}

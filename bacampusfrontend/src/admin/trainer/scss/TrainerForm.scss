@@ -1,0 +1,138 @@
+.trainer-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.form-title {
+  color: #337ab7;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-label {
+  margin-right: 15px;
+  font-weight: bold;
+  width: 150px;
+}
+.form-radio {
+  display: flex;
+  gap: 20px;
+  // width: 740px;
+  width: 555.78px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.radio-option input[type="radio"] {
+  appearance: none;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #337ab7;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"]:checked {
+  background-color: #337ab7;
+}
+
+.radio-option input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2px;
+}
+.form-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 5px;
+}
+
+/* Add margin-bottom to separate each error message */
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #5cb85c;
+}
+
+.trainer-input{
+  display: flex;
+  justify-content: space-around;
+
+}
+.trainer-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  .trainer-row-space{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+    .input-container{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 10px;
+      .trainer-phone{
+        max-width: 45%;
+      }
+    }
+  }
+}
+

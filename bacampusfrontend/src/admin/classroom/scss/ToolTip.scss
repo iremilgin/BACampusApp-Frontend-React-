@@ -1,0 +1,43 @@
+.custom-tooltip{
+    position: relative;
+    display: block;
+}
+
+.custom-tooltip .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    background-color: #ffffff;
+    color: #fff;
+    text-align: start;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: auto;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: 10px;
+    top: 100%;
+    transform: translateY(10px);
+}
+.custom-tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+.title-text{
+    color: #414a59;
+    font-size: 0.88rem;
+}
+
+.content-text{
+    color: rgb(58, 57, 57);
+    font-size: 0.88rem;
+}
+
+.error-text{
+    color: #e74c3c;
+    font-size: 0.88rem;
+}

@@ -1,0 +1,123 @@
+// .main-form-subject {
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   .subject-update-card {
+//     background-color: #f4f4f4;
+//     border-radius: 5px;
+//     padding: 20px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     width: 400px;
+//   }
+
+//   .subject-update-card-header {
+//     text-align: center;
+//     margin-bottom: 15px;
+//   }
+
+//   .subject-update-card-header h2 {
+//     font-size: 22px;
+//   }
+
+//   .subject-update-card-body {
+//     width: 100%;
+//   }
+
+//   .row-body-subject {
+//     display: flex;
+//   }
+
+//   .column-subject {
+//     flex: 1;
+//     padding: 10px;
+//   }
+
+//   .row-update-subject {
+//     margin-bottom: 15px;
+//   }
+
+//   .form-label-2-subject {
+//     font-weight: bold;
+//     display: block;
+//     margin-bottom: 5px;
+//   }
+
+//   .form-input-subject {
+//     width: 100%;
+//     padding: 8px;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//   }
+
+//   .error-message-sm-subject {
+//     color: red;
+//     font-size: 14px;
+//     margin-top: 5px;
+//   }
+
+//   .row-button-2-subject {
+//     text-align: center;
+//     margin-top: 15px;
+//   }
+
+//   .btn-primary-subject {
+//     background-color: #007bff;
+//     color: #fff;
+//     border: none;
+//     padding: 8px 15px;
+//     border-radius: 4px;
+//     cursor: pointer;
+//   }
+
+//   .btn-primary-subject:hover {
+//     background-color: #0056b3;
+//   }
+
+.drag-drop-area {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-drop-area,
+.selected-file {
+  border-radius: 25px; /* Köşeleri yuvarlatma miktarı, ihtiyaca göre değiştirilebilir */
+  overflow: hidden; /* İçeriğin yuvarlanmış köşelerin içinde kalmasını sağlar */
+  flex: 1 1;
+}
+
+.subjectName-select {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 0.8125rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.select-list-subject {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #9b9898;
+  margin: 3px;
+  // max-width: calc(100% - 6px);
+  justify-content: center;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+.subject-hover:hover {
+  color: rgba(0, 0, 0, 0.459); 
+  cursor: pointer;
+}
+
+.subject-hover:hover path {
+  fill: rgba(0, 0, 0, 0.459); 
+}

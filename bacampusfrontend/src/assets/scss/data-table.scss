@@ -1,0 +1,109 @@
+.data-table-thead {
+  color: rgb(58, 57, 57);
+  letter-spacing: 0.5px;
+}
+.data-table-body {
+  background-color: rgba(243, 243, 243, 0.1);
+  color: #414a59; 
+  &-search-input {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #c3c2c2;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: transparent;
+    position: absolute;
+    margin: 10px;
+    input {
+      border: none !important;
+      background-color: transparent;
+      font-size: 1rem;
+      height: 0.8rem;
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }  
+  }
+}
+.data-table-thead-tr-th {
+  vertical-align: bottom;
+  font-size: 1rem;
+  align-items: center;
+  span {
+    padding: 0;
+    margin-left: 10px;
+    color: #0070ba;
+  }
+}
+.data-table-thead {
+  height: 100px;
+  &-tr-th:last-child {
+    text-align: end;
+  }
+}
+
+.tbody-tr {
+  height: 3rem;
+  &-td:last-child {
+    text-align: end;
+  }
+  &:hover {
+    background-color: #f7fafc;
+  }
+}
+.tbody-tr-td,
+.data-table-thead-tr-th {
+  max-width: 400px;
+}
+.table-cell {
+  flex: 1;
+  padding: 8px; // İstediğiniz bir iç kenar boşluğu
+  text-align: left;
+}
+.data-table-footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f7fafc;
+}
+.page-size-select {
+  padding: 4px 10px 4px 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.data-table-options {
+  text-align: center;
+}
+.buttons {
+  justify-content: flex-end !important;
+}
+
+.details-column{
+  font-size: 1px;
+  color: #414a59;
+  font-family: "CustomFont" !important;
+}
+////////////////////////////////////////////////    Pagination    //////////////////////////////////////////////////
+.pagination.menu {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  padding: 10px 16px;
+  // background-color: #F7FAFC;
+  margin-top: 0;
+  gap: 0.3rem;
+  .item {
+    padding: 3px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    &:hover {
+      background-color: #0070ba;
+      border: 1px solid transparent;
+      color: #fff;
+    }
+  }
+}

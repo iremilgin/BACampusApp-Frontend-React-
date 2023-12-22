@@ -1,0 +1,242 @@
+.studenthomework-details-container {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+
+  .studenthomework-details-item {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    .studenthomework-details-label {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #666;
+      display: block;
+      width: 400px;
+    }
+
+    .studenthomework-details-value {
+      color: #333;
+      margin-top: 5px;
+    }
+  }
+
+  .studenthomework-details-value p {
+    color: #333;
+  }
+
+  .form-buttons {
+    margin-top: 20px;
+
+    .custom-cancel-button {
+      text-decoration: none;
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken(#dc3545, 10%);
+      }
+    }
+  }
+}
+.studenthomework-details-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .student-image {
+    margin-right: 10px;
+  }
+
+  .student-name {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+.student-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .student-name {
+    font-size: 17, 5px;
+  }
+  .student-class {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.studenthomework-details-header {
+  margin-bottom: 75px;
+}
+.default-user-icon {
+  color: gray;
+}
+.info-icon-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+
+  &.open {
+    display: block;
+    z-index: 1040;
+  }
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-content h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.info-icon-container {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.modal-close-button {
+  text-decoration: none;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: 38%;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.modal-close-button:hover {
+  background-color: #e43333;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.studenthomework-details-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+
+  color: var(--root-text-color, #495057);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px; /* 150% */
+}
+.student-image-modal {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.student-name-modal {
+  margin-bottom: 10px;
+  margin-top: 45px;
+
+
+  align-items: flex-start;
+  gap: 10px;
+}
+.student-subname-modal {
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+  
+  align-items: flex-start;
+  gap: 10px;
+}
+// .student-class-modal {
+// }
+// .student-telephone-modal {
+// }
+
+// .student-email-modal {
+// }
+// .student-birthday-modal {
+// }
+// .student-gender-modal {
+// }
+
+.line {
+  opacity: 0.4;
+}
+.details-offset {
+  margin-left: 20rem;
+}
+.details-offset-name-modal {
+  font-size: 0.9em;
+  margin-left: 7rem;
+  color: #000000;
+}
+.details-offset-modal {
+  font-size: 0.9rem;
+  margin-left: 9.9rem;
+  color: #000000;
+}
+// .details-offset-telephone-modal {
+//   font-size: 0.9em;
+//   margin-left: 7rem;
+//   color: #000000;
+// }
+// .details-offset-email-modal {
+//   font-size: 0.9em;
+//   margin-left: 7rem;
+//   color: #000000;
+// }
+// .details-offset-birthday-modal {
+//   font-size: 0.9em;
+//   margin-left: 7rem;
+//   color: #000000;
+// }
+// .details-offset-gender-modal {
+//   font-size: 0.9em;
+//   margin-left: 7rem;
+//   color: #000000;
+// }
+.form-label {
+  text-align: left;
+}
+.info-icon-container {
+  color: gray;
+}

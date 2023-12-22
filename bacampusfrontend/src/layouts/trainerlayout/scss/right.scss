@@ -1,0 +1,277 @@
+:root{
+  --color-light: rgba(242, 242, 248, 0.852);
+  --color-white: #fff;
+  --color-danger: #009DDE;
+  --box-shadow: 0 2rem 3rem var(--color-danger);
+  --color-dark: #363636;
+}
+nav{
+  position: relative;
+  width: 100%;
+  position:fixed;
+  padding-right: 5rem;
+  // margin-left: 18.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 1029;
+  min-height: 4rem;
+  align-items: center;
+  // display: flex;
+  justify-content: space-between;
+background-color: #f5f7f8e5;
+margin-bottom: 25px;
+flex-flow:row-reverse wrap ;
+}
+.right{
+    margin-top: 1.4rem;
+   
+}
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 5.9rem;
+    position: fixed;
+    justify-content: flex-end;
+
+    position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+}
+.right .top button{
+    display: none;
+}
+.right .top .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+/*============submenu===============*/
+.submenu-wrapper{
+    position: absolute;
+    margin-top: 30px;
+    top: 20%;
+    right: 5%;
+    width: 200px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.submenu-wrapper.openMenu{
+   
+    max-height: 400px;
+}
+.submenu{
+    background-color: #fff;
+    padding: 1.1rem;
+    margin: 10px;
+    border-radius: 5px;
+}
+.submenu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444;
+    margin: 12px 0;
+}
+.submenu-link p{
+width: 100%;
+text-align: left;
+transition: 0.5s;
+}
+.submenu-link img{
+    margin-right: 15px;
+}
+.submenu-link span{
+      font-size: 22px;
+      color: #333;
+      transition: 0.5s;
+}
+.submenu-link:hover span{
+    transform: translateX(5px);
+}
+.submenu-link:hover p{
+    font-weight: 600;
+}
+/* ========================TOGGLE======================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d4d4d4;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .role-select {
+    position: relative;
+    display: flex;
+    width: 90px;
+    height: 20px;
+    border-radius: .25em;
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  .role-select:hover {
+    border: 0.1px solid lightgray;
+  }
+  /* Arrow */
+  .role-select::after {
+    content: '\25BC';
+    position: absolute;
+    color: lightgray;
+    top: -3px;
+    right: 0;
+    padding: 5px;
+    background-color: #fff;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .role-select:hover::after {
+    color: gray;
+    top: -4px;
+    // border: 1px solid lightgray;
+  }
+  /* ==================MEDIA QUERIES================= */
+@media screen and (max-width: 768px) {
+  nav{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 0;
+  }
+  .right{
+      width: 94%;
+      margin: 0 auto 4rem;
+  }
+  .right .top{
+      position: fixed;
+      top: 0;
+      left: 0;
+      align-items: center;
+      padding: 0 0.8rem;
+      height: 4.6rem;
+      background: var(--color-white);
+      width: 100%;
+      margin: 0;
+      z-index: 2;
+      box-shadow: 0 1rem 1rem var(--color-light);
+  }
+
+  .right .top .theme-toggler{
+      width: 4.4rem;
+      position: absolute;
+      left: 66%;
+  }
+  .right .profile .info{
+      display: none;
+  }
+  .right .top button{
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+      color: var(--color-dark);
+      position: absolute;
+      left: 1rem;
+  }
+  .right .top button img{
+      font-size: 2rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.info select {
+  color: #0070BA;
+  font-weight: 600;
+  width: 90px;
+}
+
+.info select option {
+  color: #677483;
+  font-weight: 400;
+}
+
+.text-muted {
+  color: #0070BA;
+  font-weight: 600;
+}

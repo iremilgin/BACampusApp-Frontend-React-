@@ -1,0 +1,25 @@
+.buttons {
+    .dropdown-container {
+      .btn-operations {
+        margin: 0;
+        border: none;
+        padding: 0;
+        span {
+          display: flex;
+          gap: 4px;
+        }
+      }
+      .dropdown-content {
+        .dropdown-option {
+          font-size: 1rem;
+          color: #414a59;
+          padding: 10px;
+          white-space: nowrap;
+          &:hover {
+            background-color: #f7fafc;
+          }
+        }
+      }
+    }
+  }
+  

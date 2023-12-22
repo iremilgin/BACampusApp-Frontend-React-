@@ -1,0 +1,78 @@
+.trainer-details-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #173c5c;
+}
+
+.trainer-details-item {
+  margin-bottom: 8px;
+}
+
+.trainer-details-label {
+  font-weight: bold;
+  color: #337ab7;
+  font-size: 16px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.trainer-details-value {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.trainer-details-value.gender-male {
+  color: blue;
+}
+
+.trainer-details-value.gender-female {
+  color: rgb(179, 57, 98);
+}
+
+.trainer-details-container {
+  margin: 100px 20px;
+  padding: 10px;
+  border: 1px solid #0e0d0d;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .trainer-details-container {
+    max-width: 90%;
+  }
+  .trainer-details-title {
+    font-size: 18px;
+  }
+
+  .trainer-details-label {
+    font-size: 14px;
+  }
+
+  .trainer-details-value {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .trainer-details-container {
+    max-width: 80%;
+  }
+  .trainer-details-title {
+    font-size: 16px;
+  }
+
+  .trainer-details-label {
+    font-size: 14px;
+  }
+
+  .trainer-details-value {
+    font-size: 14px;
+  }
+}

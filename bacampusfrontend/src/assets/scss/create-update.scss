@@ -1,0 +1,44 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background-color:rgba(234, 234, 234, 0.3);
+    border-radius:30px;
+}
+.head{
+    color: rgba(0, 72, 102, 1);
+}
+h3{
+    color: rgba(0, 72, 102, 1);
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    padding-top: 10px;
+}
+hr{
+    border-color: rgba(0, 72, 102, 1);
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+}
+h5{
+    padding-left: 30px;
+    margin-bottom: 1%;
+}
+.area{
+    padding-left: 30px;
+}
+button{
+    background-color:  rgba(0, 72, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 6%;
+    margin-right: 10%;
+    float: right;
+}

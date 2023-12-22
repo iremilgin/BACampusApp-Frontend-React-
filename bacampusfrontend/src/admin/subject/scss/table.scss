@@ -1,0 +1,82 @@
+.table-container {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+   
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f7fafc;
+    font-weight: 600;
+  }
+  
+  .table tbody tr.group:hover {
+    background-color: #ebf8ff;
+  }
+  
+  /* Search and Sorting Styles */
+  .search-input {
+    height: 2rem;
+    outline: none;
+    border: 1px solid #d2d6dc;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .sort-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    color: #718096;
+    transition: color 0.2s;
+  }
+  
+  .sort-button:hover {
+    color: #4a5568;
+  }
+  
+  .sort-icon {
+    vertical-align: middle;
+  }
+  .justify-start .search-input {
+    width: 20%; 
+  }
+  .cancel-sort-button {
+    color: #e53e3e; 
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .mobile-table {
+      display: block;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+  
+    .mobile-table th,
+    .mobile-table td {
+      text-align: center;
+      border: none;
+      padding: 0.5rem 0;
+    }
+  }

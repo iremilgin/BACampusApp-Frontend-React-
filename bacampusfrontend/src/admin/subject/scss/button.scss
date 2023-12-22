@@ -1,0 +1,38 @@
+.btn-delete {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--danger, #d9534f);
+}
+.btn-edit {
+  display: flex;
+  width: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--primary, #337ab7);
+}
+.btn-create {
+  width: 150px;
+  height: 30px;
+  border-radius: 12px;
+  color: white;
+  background: var(--green, #5cb85c);
+  float: right;
+}
+.btn-warning {
+  width: 150px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  color: white;
+  background: var(--yellow, #e0a800);
+}

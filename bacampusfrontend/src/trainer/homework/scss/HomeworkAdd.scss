@@ -1,0 +1,207 @@
+.trainer-update-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 4px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+///////////////////////////////////////////////////////////////
+
+.homework-create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+.form-title {
+  font-size: 18px;
+  margin: 5px;
+}
+.card-body {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+  color: rgb(65, 74, 89);
+}
+.form-field {
+  grid-column: span 0.5;
+  gap: 5px;
+  margin-bottom: 0;
+}
+.extra-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 1px solid #d3e4ee;
+  border-radius: 10px;
+  .extra-field {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.extra-field-two {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  div {
+    margin-top: 5px;
+  }
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.87rem;
+  align-self: center;
+  width: 400px;
+}
+.form-field .form-input,
+.form-input,
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #d3e4ee;
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgb(65, 74, 89);
+}
+
+.right-label {
+  padding-left: 24px;
+}
+.special-settings{
+  padding: 0;
+}
+
+.reference::file-selector-button {
+  border: none;
+  background-color: rgb(115, 115, 115);
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.calender::-webkit-calendar-picker-indicator {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.form-textarea {
+  width: 1280px;
+  font-family: "CustomFont" !important;
+  font-size: 12.18px;
+}
+.form-textarea.extra {
+  width: 1800px;
+  font-family: "CustomFont" !important;
+  font-size: 12.18px;
+}
+
+.otherinformation {
+  margin-left: 10.7%;
+  display: flex;
+  gap: 50px;
+}
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-input.checkbox {
+  color: #d3e4ee;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+.buttons-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.submit-button {
+  width: 150px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+.submit-button.backto-list {
+  background-color: #d9534f;
+  &:hover {
+    background-color: #d9534f;
+  }
+}
+.combobox {
+  padding: 0;
+  border-color: #d9534f;
+}
+@media (max-width: 768px) {
+  .homework-form-container {
+    padding: 20px;
+  }
+
+  .form-input,
+  .form-textarea,
+  .submit-button,
+  .cancel-button {
+    font-size: 14px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+}
